@@ -1,0 +1,32 @@
+//Import Variables //
+@import './variables/__all';
+
+//Import Mixins //
+@import './mixins/__all';
+
+// Import Utils //
+@import  './util/__all';
+
+// Import Components //
+@import './components/__all';
+
+// Import Sections //
+@import './sections/__all';
+
+
+body {
+    position: relative;
+    margin: 0;
+    background-color: #FAFAFA;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    font-weight: 300;
+    font-size: 16px;
+    color: $color-secondary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media screen and (max-width: $bp-MD){
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,21 @@
+.card{
+    &-header{
+        background-color: #fff;
+        box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.181);
+        padding: 11px 8px;
+        border-radius: 0 0 0 4px !important;
+        
+        @media screen and (max-width: $bp-MD){
+            box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.081);
+            padding: 8px 6px;
+        }
+    }
+
+    &-body{
+        font-size: 15px;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 13px;
+        }
+    }
+}

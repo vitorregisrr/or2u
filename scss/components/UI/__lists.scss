@@ -1,0 +1,63 @@
+.list-icon  {
+    padding-left: 30px;
+
+    li {
+        position: relative;
+        font-size: 15px;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 14px;
+        }
+
+        &:after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: -19px;
+            top: 50%;
+            width: 14px;
+            height: 14px;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 8px;
+            border-radius: 50%;
+        }
+    }
+    
+    &.list-error{
+        li{
+            &:after{
+                content: '\f00d';
+                background-color: #A51212;
+            }
+        }
+    }
+    
+    &.list-success{
+        li{
+            &:after{
+                content: '\f00c';
+                background-color: #1C8C77;
+            }
+        }
+    }
+}
+
+.contact-list{
+    padding-left: 30px;
+
+    li{
+        display: flex;
+        align-items: center;
+
+        span{
+            display: inline-block;
+            margin-right: 7px;
+            font-size: 19px;
+            color: #006654;
+        }
+    }
+}

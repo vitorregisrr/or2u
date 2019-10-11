@@ -1,0 +1,77 @@
+.form-control{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.181);
+    padding: 15px 20px;
+    border-radius: 0 0 0 4px !important;
+    border-radius: 0;
+    border: none;
+    color: $color-secondary;
+    font-weight: 400;
+    @include transition();
+
+    @media screen and (max-width: $bp-MD){
+        box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.081);
+    }
+
+    &::placeholder{
+        color: rgba(88, 88, 88, 0.76);
+    }
+
+    &:focus, &:active{
+        outline: none;
+        border: none;
+        box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.181);
+    }
+}
+
+textarea.form-control{
+    height: auto;
+}
+
+.form-labeled{
+    position: relative;
+
+    input{
+        padding-top: 21px;
+        padding-bottom: 10px;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 14px;
+            padding-top: 19px;
+            padding-bottom: 7px;
+        }
+    }
+
+    .input-name{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        color: $color-primary;
+        font-weight: 400;
+        font-size: 11px;
+        opacity: 0;
+        @include transition();
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 10px;
+        }
+    }
+
+    input:focus ~ label, label.active{
+        top: 5px;
+        opacity: 1;
+    }
+}
+
+.form-group{
+    label.error{
+        display: block;
+        color: rgb(240, 80, 69);
+        opacity: .8;
+        font-size: 13px;
+        font-weight: 400;
+        padding-top: 5px;
+        padding-left: 4px;
+    }
+}

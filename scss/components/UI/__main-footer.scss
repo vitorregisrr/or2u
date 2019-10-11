@@ -1,0 +1,62 @@
+.footer {
+    padding: 40px 20px;
+    background-color: $color-primary;
+    letter-spacing: 1px;
+    color: hsl(60, 100%, 98%);
+
+    @media screen and (max-width: $bp-MD){
+        padding: 20px 10px 30px 10px;
+    }
+
+    &__info{
+        font-weight: lighter;
+        color: #fff;
+        font-size: 13px;
+
+        p{
+            margin-bottom: 2px;
+        }
+
+        b{
+            font-weight: 600;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            margin-bottom: 20px;
+            font-size: 11px;
+        }
+    }
+
+    &__brand{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+
+        img{
+            width: 170px;
+        }
+        
+        @media screen and (max-width: $bp-LG){
+            justify-content: center;
+            margin-bottom: 50px;
+
+            img{
+                width: 120px;
+            }
+        }
+    }
+
+    &__copy{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 12px;
+
+        @media screen and (max-width: $bp-LG){
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,173 @@
+.main-header {
+    position: relative;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: $bp-LG) {
+        padding: 0;
+    }
+
+    &__content {
+        padding: 40px 0;
+        width: 100%;
+
+        @media screen and (max-width: $bp-LG) {
+            padding: 0;
+            border-bottom: 1px solid rgba(8, 70, 16, 0.445);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and(max-width: $bp-LG) {
+                padding: 0;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+
+        &__tools {
+            position: relative;
+            display: flex;
+            margin-top: 30px;
+
+            @media screen and (max-width: $bp-LG) {
+                margin-top: 0;
+                padding: 20px;
+                margin-bottom: 20px;
+                background-color: $color-primary;
+            }
+
+
+            &__form {
+                position: relative;
+                width: 250px;
+
+                @media screen and (max-width: $bp-LG) {
+                    margin-right: 10px;
+                    width: 50%;
+                }
+
+                input {
+                    background-color: rgba(255, 255, 255, 0);
+                    width: 100%;
+                    border: 1px solid black;
+                    @include transition();
+                    padding-left: 20px;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    padding: 5px 10px;
+                    height: 32px;
+
+                    @media screen and(max-width: $bp-LG) {
+                        border-color: #fff;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        background-color: rgba(0, 0, 0, 0.075);
+                        box-shadow: none;
+                    }
+
+                    &::placeholder {
+                        color: rgba(0, 0, 0, 0.849);
+
+
+                        @media screen and(max-width: $bp-LG) {
+                            color: #fff;
+                        }
+                    }
+
+                }
+
+                &:after {
+                    content: '\f002';
+                    position: absolute;
+                    right: 10px;
+                    top: 1px;
+                    font-family: FontAwesome;
+                    font-size: 17px;
+                    color: rgb(32, 32, 32);
+
+                    @media screen and(max-width: $bp-LG) {
+                        color: #fff;
+                    }
+                }
+            }
+
+            &__lang {
+                @media screen and (max-width: $bp-LG) {
+                    width: 30%;
+                }
+            }
+
+            &__toggler {
+                display: none;
+                background-color: #b57a30;
+
+                @media screen and (max-width: $bp-LG) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 70px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+
+                    button {
+                        color: #fff;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        &__brand {
+            height: 70px;
+
+            @media screen and(max-width: $bp-LG) {
+                height: auto;
+                margin-top: 15px;
+                margin-bottom: 30px;
+                order: 1;
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+}
+
+.nav-bege {
+    .main-header {
+        padding: 0;
+
+        &__content {
+            background-image: url(../images/banners/bgwave.png);
+            background-size: cover;
+        }
+    }
+
+    .main-nav {
+    
+        @media screen and (min-width: $bp-LG){
+            background: #e9cd8f;
+        }
+
+        &__list__item {
+            &:not(:last-child) {
+                border-right: 1px solid #fff;
+
+
+                @media screen and(max-width: $bp-LG) {
+                    border-left: none;
+                }
+            }
+        }
+    }
+}

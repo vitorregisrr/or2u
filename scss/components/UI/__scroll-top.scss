@@ -1,0 +1,37 @@
+.scroll-top{
+    position: absolute;
+    right: 130px;
+    bottom: 430px;
+    width: 35px;
+    height: 35px;
+    background-image: url(../images/ico/scrolltop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    @include transition();
+    opacity: 0;
+
+    &.show{
+        opacity: 1;
+    }
+    &:hover{
+        @include scale(1.1);
+    }
+
+    &:active, &:focus{
+        outline: none;
+    }
+
+    @media screen and (max-width: $bp-MD){
+        position: fixed;
+        right: 50px;
+        bottom: 100px;
+    }
+
+    @media screen and (min-width: 1000px) and (max-width: 1450px){
+        right: 25px;
+    }
+}
