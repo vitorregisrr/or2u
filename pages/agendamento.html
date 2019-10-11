@@ -116,99 +116,59 @@
   <!-- partial -->
 
   <main>
-    <section id="aparelho-invisivel" class="aparelho-invisivel">
-      <h1 class="aparelho-invisivel__title">Tenha o total controle na palma duas suas mãos</h1>
-    </section>
+    <section id="agendamento" class="agendamento">
+      <div id="agendamento-actions" class="row">
+        <div class="col-lg-6 bg-pink-l justify-content-center align-items-center justify-content-lg-end h-100">
+          <h2 class="inner-title">Quero alinhar meus dentes</h2>
+          <button class="btn btn-primary agendamento-toggler" data-target="#agendamento-form"><i
+              class="fa fa-clock mr-2" aria-hidden="true"></i>Agendar avaliação</button>
+        </div>
+        <div class="col-lg-6  bg-pink-l justify-content-center align-items-center justify-content-lg-start h-100">
+          <h3 class="inner-title">Quero clarear meus dentes</h3>
+          <button class="btn btn-primary agendamento-toggler" data-target="#agendamento-form"><i
+              class="fa fa-clock mr-2" aria-hidden="true"></i>Agendar avaliação</button>
+        </div>
+      </div>
 
-    <section id="como-funciona" class="como-funciona">
-      <div class="container">
-        <div class="col-12">
-          <h2 class="como-funciona__title inner-title">
-            É simples, rápido e prático. Entenda como funciona:
-          </h2>
+      <div id="agendamento-form" class="row">
+        <h4 class="agendamento__form-title">Localização: Rua Antônio Cândido Pereira, 21 Sala 22 - Jardim Faculdade -
+          Sorocaba/SP</h4>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label for="inputPeriodo">Período</label>
+            <select name="periodo" id="inputPeriodo">
+              <option value="manha" selected>Manhã</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inputDia">Dia da semana</label>
+            <select name="periodo" id="inputDia">
+              <option value="terca-feira" selected>Terça-Feira</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inputDia">Dia da semana</label>
+            <select name="periodo" id="inputDia">
+              <option value="terca-feira" selected>Terça-Feira</option>
+            </select>
+          </div>
         </div>
         <div class="col-lg-4">
-          <div class="como-funciona__polign blue has-connector">
-            <img src="../images/ico/calendar.png" alt="Ícone de um calendário" class="ico">
+          <div class="form-group">
+            <label for="inputNome">Nome</label>
+            <input type="text" name="nome" id="inputNome" placeholder="Alexandre Tabai Coelho">
           </div>
-          <p class="como-funciona__caption  inner-desc">
-            Primeiro você fala conosco, vamos entender suas necessidades e tirar todas as
-            suas dúvidas, estamos aqui para te ajudar com isso!
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <div class="como-funciona__polign blue has-connector">
-            <img src="../images/ico/box.png" alt="Ícone de uma caixa" class="ico">
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="text" name="email" id="inputEmail" placeholder="contato@or2u.com.br">
           </div>
-          <p class="como-funciona__caption  inner-desc">
-            Agora que te consideramos pakas, vamos enviar para sua casa o kit invisalign.
-            Hora do unboxing!
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <div class="como-funciona__polign blue">
-            <img src="../images/ico/aparelho.png" alt="Ícone de um aparelho" class="ico">
+          <div class="form-group">
+            <label for="inputTelefone">Telefone ou Celular</label>
+            <input type="text" name="email" id="inputTelefone" placeholder="15 9 9844-7339">
           </div>
-          <p class="como-funciona__caption  inner-desc">
-            Agora é sua vez de brilhar! Siga todas as etapas do manual e lembre-se das dicas
-            do dentista. Se pular o manual, nós vamos saber!
-          </p>
         </div>
       </div>
     </section>
-
-    <section id="dentes-branquinhos">
-      <article class="fluid-cards">
-        <div class="fluid-cards__img">
-          <img src="../images/banners/hero-branquinhos.png"
-            alt="Mulher de aparência alternativa com um grande sorriso branco segurando o aparelho transparente em frente ao olho esquerdo.">
-        </div>
-        <div class="fluid-cards__caption is-right bg-blue">
-          <div>
-            <h2 class="fluid-cards__title inner-title color-primary">
-              Dentes branquinhos
-            </h2>
-            <p class="fluid-cards__desc  inner-desc">
-              - placa confortável sob medida <br />
-              - gel que não causa sensibilidade <br />
-              - resultados duradouros <br />
-              - você faz onde quiser, em qualquer hora do dia <br />
-              - dá para acompanhar a evolução
-            </p>
-            <a href="#" role="button" class="btn btn-primary">
-              <i class="fa fa-clock mr-2" aria-hidden="true"></i>
-              Agende sua avaliação
-            </a>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section id="combo-smile">
-      <article class="fluid-cards">
-        <div class="fluid-cards__caption is-left bg-blue">
-          <div>
-            <h2 class="fluid-cards__title inner-title color-primary">
-              Combo Smile
-            </h2>
-            <h3 class="fluid-cards__subtitle color-secondary">Alinhamento + clareamento</h3>
-            <p class="fluid-cards__desc  inner-desc">
-              Quisque mollis libero a ipsum fermentum, et ultrices tellus suscipit. Class aptent taciti sociosqu ad
-              litora torquent per conubia nostra, per inceptos himenaeos. Ut euismod pretium faucibus.
-            </p>
-            <a href="#" role="button" class="btn btn-primary">
-              <i class="fa fa-info-o mr-2" aria-hidden="true"></i>
-              Saiba mais
-            </a>
-          </div>
-          <div class="fluid-cards__img">
-            <img src="../images/banners/hero-combo.png"
-              alt="Mulher de aparência alternativa com um grande sorriso branco segurando o aparelho transparente em frente ao olho esquerdo.">
-          </div>
-        </div>
-      </article>
-    </section>
-
   </main>
   <button class="scroll-top"></button>
 
