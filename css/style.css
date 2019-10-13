@@ -1626,6 +1626,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 }
 
 .depoimentos__caption {
+  display: flex;
   background-color: #F4F4F4;
   width: 50%;
   color: #2A2A2A;
@@ -1636,6 +1637,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 @media screen and (min-width: 1800px) {
   .depoimentos__caption {
     justify-content: flex-end;
+    align-items: center;
     padding-right: 300px;
   }
 }

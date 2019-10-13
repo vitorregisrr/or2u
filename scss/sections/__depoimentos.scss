@@ -10,6 +10,7 @@
     }
 
     &__caption {
+        display: flex;
         background-color: $color-light;
         width: 50%;
         color: $color-dark;
@@ -18,6 +19,7 @@
 
         @media screen and (min-width: 1800px) {
             justify-content: flex-end;
+            align-items: center;
             padding-right: 300px;
         }
 
