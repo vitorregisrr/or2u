@@ -658,7 +658,7 @@ button:focus {
   padding: 0 23px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .main-nav__content {
     height: 60px;
     padding: 0 15px;
