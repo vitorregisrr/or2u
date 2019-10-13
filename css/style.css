@@ -1289,8 +1289,10 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   color: #fffff5;
 }
 
-.footer .container {
-  max-width: 1300px;
+@media screen and (min-width: 1400px) {
+  .footer .container {
+    max-width: 1300px;
+  }
 }
 
 .footer__list {

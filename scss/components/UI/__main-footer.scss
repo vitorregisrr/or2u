@@ -4,42 +4,43 @@
     letter-spacing: 1px;
     color: hsl(60, 100%, 98%);
 
-    .container{
-        max-width: 1300px;
+    .container {
+        @media screen and (min-width: 1400px) {
+            max-width: 1300px;
+        }
     }
-   &__list{
-       text-transform: lowercase;
-       color: $color-dark;
 
-       a{
-           display: block;
-           margin-bottom: 4px;
-           color: $color-dark !important;
-           @include transition();
+    &__list {
+        text-transform: lowercase;
+        color: $color-dark;
 
-           &:hover{
-               color: $color-primary !important;
-           }
+        a {
+            display: block;
+            margin-bottom: 4px;
+            color: $color-dark !important;
+            @include transition();
+            &:hover {
+                color: $color-primary !important;
+            }
 
-           &.btn-media{
-               display: flex;
-               color: #fff !important;
-           }
-       }
+            &.btn-media {
+                display: flex;
+                color: #fff !important;
+            }
+        }
 
-       &-item{
-           font-size: 15px;
-           font-weight: 300;
-           margin-bottom: 10px;
-       }
+        &-item {
+            font-size: 15px;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
 
-       &-title{
-           font-weight: 800;
-           margin-bottom: 8px;
-       }
-
-       @media screen and (max-width: $bp-MD){
-           text-align: center;
-       }
-   }
+        &-title {
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+        @media screen and (max-width: $bp-MD) {
+            text-align: center;
+        }
+    }
 }
