@@ -1,0 +1,103 @@
+.fluid-cards{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    height: 480px;
+    margin: 60px 0;
+
+    @media screen and (max-width: $bp-LG){
+        flex-direction: column;
+        align-items: unset;
+        height: unset;
+    }
+
+    &__img{
+        width: 45%;
+        overflow: hidden;
+        height: 100%;
+
+        @media screen and (max-width: $bp-LG){
+            align-self: flex-end;
+            order: 2;
+            margin-top: -50px;
+            width: 90%;
+            height: 340px;
+
+            &.is-right{
+                align-self: flex-end;
+            }
+            
+            &.is-left{
+                align-self: flex-start;
+            }
+        }
+
+        @media screen and (max-width: $bp-MD){
+            height: 250px;
+        }
+
+
+        &.is-right{
+            border-radius: 36px 0 0 36px;
+        }
+
+        &.is-left{
+            border-radius: 0 36px 36px 0;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__caption{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 55%;
+        height: 83%;
+        background-color: $color-pink-l;
+        text-align: center;
+
+        @media screen and (max-width: $bp-LG){
+            align-self: flex-start;
+            order: 1;
+            width: 100%;
+            height: auto;
+            padding: 50px 30px 100px 30px;
+        }
+
+
+        @media screen and (min-width: 1800px){
+            &.is-left{
+                justify-content: flex-end;
+                padding-right: 200px;
+            }
+
+            &.is-right{
+                justify-content: flex-start;
+                padding-left: 200px;
+            }
+        }
+
+        &-content{
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .inner-title, .inner-desc{
+            margin-bottom: 19px;
+        }
+
+        .inner-desc{
+            max-width: 500px;
+        }
+    }
+}

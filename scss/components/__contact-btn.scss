@@ -1,0 +1,9 @@
+.contact-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+
+    @media screen and (max-width: $bp-MD){
+        display: none;
+    }
+}

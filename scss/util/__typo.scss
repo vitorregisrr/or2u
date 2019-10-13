@@ -1,0 +1,44 @@
+.inner-title{
+    font-weight: 700;
+    text-transform: lowercase;
+    font-size: 45px;
+
+    @media screen and (max-width: $bp-MD){
+        font-size: 30px;
+    }
+}
+
+.inner-desc{
+    font-weight: 300;
+    font-size: 19px;
+    color: #2A2A2A;
+
+    @media screen and (max-width: $bp-MD){
+        font-size: 15px;
+    }
+}
+
+
+.text-sm{
+    font-size: 13px;
+}
+
+.text-md {
+    font-size: 17px;
+}
+
+.color-primary {
+    color: $color-primary !important;
+}
+
+.color-white {
+    color: #fff !important;
+}
+
+.color-secondary {
+    color: $color-secondary !important;
+}
+
+.color-dark {
+    color: $color-dark !important;
+}

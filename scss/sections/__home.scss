@@ -1,0 +1,61 @@
+.home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00bce4;
+    background-image: url(../images/backgrounds/bg-home.png);
+    background-repeat: repeat;
+    background-size: contain;
+
+    &__title {
+        padding: 0 20px;
+        text-transform: lowercase;
+        text-align: center;
+        color: #fff;
+        font-weight: 800;
+        font-size: 55px;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: $bp-MD) {
+            font-size: 39px;
+        }
+    }
+
+    &__scrolldown {
+        color: #fff;
+        font-size: 32px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        height: 55%;
+    }
+
+    &__hands {
+        position: absolute;
+        height: 42%;
+        transform: translateX(-50%);
+        bottom: 0;
+        left: 48%;
+
+        @media screen and (max-width: $bp-MD) {
+            height: 32%;
+            left: 50%;
+        }
+
+        @media screen and (max-width: 330px) {
+            height: 28%;
+        }
+    }
+}

@@ -7,8 +7,8 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>OR2U</title>
-<link rel="icon" href="/images/ico/favicon.png" />
+<title>OR2U - Studio Ortodôntico</title>
+<link rel="icon" href="/images/favicon.png" />
 
 <!-- Load META-TAGS for SEO -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -38,7 +38,7 @@
 <meta name="twitter:site" content="@app">
 
 <!-- Load Font -->
-<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,800,900&display=swap" rel="stylesheet">
 
 <!-- Vendor JS -->
 <script src="../vendors/js/vendor.bundle.base.js" defer></script>
@@ -65,54 +65,106 @@
 
 <body class=" wow fadeIn">
   <!-- partial:../partials/__navbar.html -->
-  <nav id="main-nav" class="main-nav">
+  <nav id="main-nav" class="main-nav wow fadeInDown">
 
     <div class="main-nav__content">
-        <div class="main-nav__left">
+        <div class="main-nav__left d-flex align-items-center">
             <a href="./index.html">
                 <div class="main-nav__brand wow fadeIn">
                     <img src="../images/brands/or2u.png" alt="Logomarca OR2U"></div>
-                </a>
+            </a>
 
-                <ul id="main-nav-menu" class="main-nav__list wow fadeIn">
-                    <li class="main-nav__item active">
-                        <a href="../pages/index.html">Aparelho Invísivel</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="../pages/sobre.html">Clareamento</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="../pages/servicos.html">Agende sua avaliação</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="../pages/exames.html">Exames</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="main-nav__right">
-                <a href="#" role="button" class="btn btn-primary">
-                    <i class="fa fa-check-circle mr-3" aria-hidden="true"></i>
-                    Faça o teste
-                </a>
-                <a href="#" class="btn-media facebook">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#" class="btn-media instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="btn-media youtube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <button id="nav-toggler" class="main-nav__toggler  btn-transparent">
-                    <i class="fa fa-bars open"></i>
-                    <i class="fa fa-times close"></i>
-                </button>
-            </div>
-
+            <ul id="main-nav-menu" class="main-nav__list wow fadeIn">
+                <li class="main-nav__item active">
+                    <a href="../pages/index.html">Aparelho Invísivel</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../pages/sobre.html">Clareamento</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../pages/servicos.html">Agende sua avaliação</a>
+                </li>
+            </ul>
         </div>
 
-    </nav>
+        <div class="main-nav__right d-flex  align-items-center">
+            <a href="#" role="button" class="btn btn-primary mr-lg-3 d-none d-md-block">
+                <i class="far fa-check-circle mr-1" aria-hidden="true"></i>
+                Faça o teste
+            </a>
+            <a href="#" class="btn-media facebook mr-2">
+                <i class="fab fa-facebook-f" alt="Facebook"></i>
+            </a>
+            <a href="#" class="btn-media instagram mr-2">
+                <i class="fab fa-instagram" alt="Instagram"></i>
+            </a>
+            <a href="#" class="btn-media youtube mr-2">
+                <i class="fab fa-youtube" alt="Youtube"></i>
+            </a>
+            <a href="#" class="btn-media whatsapp mr-2 d-flex d-md-none">
+                <i class="fab fa-whatsapp" alt="Whatsapp"></i>
+            </a>
+            <button id="nav-toggler" class="main-nav__toggler  btn-transparent" aria-expanded="false">
+                <i class="fa fa-bars main-nav__toggler-open"></i>
+                <i class="fa fa-times main-nav__toggler-close"></i>
+            </button>
+        </div>
+
+    </div>
+
+</nav>
+
+<nav id="mobile-nav" class="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav__content">
+        <ul class="mb-4">
+            <li class="mobile-nav__title"><span class="text-uppercase">OR2U</span></li>
+            <li class="mobile-nav__item">
+                <a href="#">Aparelho invísivel</a>
+            </li>
+            <li class="mobile-nav__item mb-4">
+                <a href="#">Clareamento</a>
+            </li>
+
+            <li class="mobile-nav__title">Informações</li>
+            <li class="mobile-nav__item">
+                <a href="#">Dúvidas</a>
+            </li>
+        </ul>
+
+        <ul class="mb-4">
+            <li class="mobile-nav__title">Contato</li>
+            <li class="d-flex align-items-center mb-2  mobile-nav__contact">
+                <i class="fa fa-phone mr-3" aria-hidden="true"></i>
+                <a href="tel:00000000"class="d-flex flex-column">
+                    <span class="color-dark text-md">
+                        (11) 38905-2335
+                    </span>
+                    <small class="color-light text-sm">
+                        seg - sex: 8h - 21h | sáb: 10h - 20h
+                    </small>
+                </a>
+            </li>
+            <li class="d-flex align-items-center mobile-nav__contact">
+                <i class="fab fa-whatsapp mr-3" aria-hidden="true"></i>
+                <a href="tel:00000000" class="d-flex flex-column">
+                    <span class="color-dark text-md">
+                        (11) 38905-2335
+                    </span>
+                    <small class="color-light text-sm">
+                        seg - sex: 8h - 21h | sáb: 10h - 20h
+                    </small>
+                </a>
+            </li>
+        </ul>
+
+        <div class="d-flex justify-content-center">
+            <a role="button" href="#" class="btn btn-primary mb-4">
+                Agende sua avaliação
+            </a>
+        </div>
+
+    </div>
+</nav>
   <!-- partial -->
 
   <main>
@@ -159,12 +211,12 @@
 
     <section id="dentes-branquinhos">
       <article class="fluid-cards">
-        <div class="fluid-cards__img">
+        <div class="fluid-cards__img is-left">
           <img src="../images/banners/hero-branquinhos.png"
             alt="Mulher de aparência alternativa com um grande sorriso branco segurando o aparelho transparente em frente ao olho esquerdo.">
         </div>
         <div class="fluid-cards__caption is-right bg-blue">
-          <div>
+          <div class="fluid-cards__caption-content">
             <h2 class="fluid-cards__title inner-title color-primary">
               Dentes branquinhos
             </h2>
@@ -187,7 +239,7 @@
     <section id="combo-smile">
       <article class="fluid-cards">
         <div class="fluid-cards__caption is-left bg-blue">
-          <div>
+          <div class="fluid-cards__caption-content">
             <h2 class="fluid-cards__title inner-title color-primary">
               Combo Smile
             </h2>
@@ -201,7 +253,7 @@
               Saiba mais
             </a>
           </div>
-          <div class="fluid-cards__img">
+          <div class="fluid-cards__img is-right">
             <img src="../images/banners/hero-combo.png"
               alt="Mulher de aparência alternativa com um grande sorriso branco segurando o aparelho transparente em frente ao olho esquerdo.">
           </div>
@@ -217,7 +269,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <ul class="footer__list">
+                <ul class="footer__list wow fadeInUp">
                     <li class="footer__list-title">OR2U smile</li>
                     <li class="footer__list-item">
                         <a href="#">Aparelho invísivel</a>
@@ -228,7 +280,7 @@
                 </ul>
             </div>
             <div class="col-lg-3">
-                <ul class="footer__list">
+                <ul class="footer__list wow fadeInUp">
                     <li class="footer__list-title">Atendimento</li>
                     <li class="footer__list-item">
                         Segunda à sexta, das 08h às 21h
@@ -237,7 +289,7 @@
                 </ul>
             </div>
             <div class="col-lg-3">
-                <ul class="footer__list">
+                <ul class="footer__list wow fadeInUp">
                     <li class="footer__list-title">Contatos</li>
                     <li class="footer__list-item mb-3">
                         <a href="tel:(00)1234-5678">(00) 1234-5678</a>
@@ -245,21 +297,21 @@
                     </li>
 
                     <li class="footer__list-title">Social</li>
-                    <li class="footer__list-item">
-                        <a href="#" class="btn-media facebook">
-                            <i class="fab fa-facebook"></i>
+                    <li class="footer__list-item d-flex justify-content-center justify-content-lg-start">
+                        <a href="#" class="btn-media mr-2 facebook">
+                            <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="btn-media instagram">
+                        <a href="#" class="btn-media mr-2 instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="btn-media youtube">
+                        <a href="#" class="btn-media mr-2 youtube">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-3">
-                <ul class="footer__list">
+                <ul class="footer__list wow fadeInUp">
                     <li class="footer__list-title">Localização</li>
                     <li class="footer__list-item">
                         Rua Antônio Cândido Pereira, 21 - Sala 22 Jardim Faculdade - Sorocaba/SP
@@ -270,7 +322,9 @@
     </div>
 </footer>
 
-<a href="tel:(00)987765432" role="button" class="contact-btn"><i class="fa fa-whatsapp mr-2" aria-hidden="true"></i> 00 9 8765-5432</a> </a>
+<a href="tel:(00)987765432" role="button" class="contact-btn btn btn-primary wow fadeInUpBig">
+    <i class="fab fa-whatsapp mr-2" aria-hidden="true"></i> 00 9 8765-5432</a> 
+</a>
   <!-- partial -->
 
 </body>

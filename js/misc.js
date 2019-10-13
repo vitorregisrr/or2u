@@ -23,6 +23,17 @@
         }, '300');
     });
 
+    //Smooth Scrooling
+    $('a[href*=\\#]:not([href$=\\#])').click(function () {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href'))
+                .offset()
+                .top - 80
+        }, 500);
+    });
+
     window.dispatchEvent(new Event('resize'));
 
 })();

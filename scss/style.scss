@@ -17,10 +17,10 @@
 body {
     position: relative;
     margin: 0;
-    background-color: #FAFAFA;
+    background-color: #fff;
     font-family: 'Nunito', sans-serif;
+    max-width: 100vw;
     overflow-x: hidden;
-    font-weight: 300;
     font-size: 16px;
     color: $color-secondary;
     -webkit-font-smoothing: antialiased;
@@ -29,4 +29,9 @@ body {
     @media screen and (max-width: $bp-MD){
         font-size: 15px;
     }
+}
+
+main{
+    max-width: 100vw;
+    overflow: hidden;
 }

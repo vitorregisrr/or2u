@@ -1,62 +1,45 @@
 .footer {
-    padding: 40px 20px;
-    background-color: $color-primary;
+    padding: 30px 0;
+    background-color: #FBF8F5;
     letter-spacing: 1px;
     color: hsl(60, 100%, 98%);
 
-    @media screen and (max-width: $bp-MD){
-        padding: 20px 10px 30px 10px;
+    .container{
+        max-width: 1300px;
     }
+   &__list{
+       text-transform: lowercase;
+       color: $color-dark;
 
-    &__info{
-        font-weight: lighter;
-        color: #fff;
-        font-size: 13px;
+       a{
+           display: block;
+           margin-bottom: 4px;
+           color: $color-dark !important;
+           @include transition();
 
-        p{
-            margin-bottom: 2px;
-        }
+           &:hover{
+               color: $color-primary !important;
+           }
 
-        b{
-            font-weight: 600;
-        }
+           &.btn-media{
+               display: flex;
+               color: #fff !important;
+           }
+       }
 
-        @media screen and (max-width: $bp-MD){
-            margin-bottom: 20px;
-            font-size: 11px;
-        }
-    }
+       &-item{
+           font-size: 15px;
+           font-weight: 300;
+           margin-bottom: 10px;
+       }
 
-    &__brand{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        height: 100%;
+       &-title{
+           font-weight: 800;
+           margin-bottom: 8px;
+       }
 
-        img{
-            width: 170px;
-        }
-        
-        @media screen and (max-width: $bp-LG){
-            justify-content: center;
-            margin-bottom: 50px;
-
-            img{
-                width: 120px;
-            }
-        }
-    }
-
-    &__copy{
-        display: flex;
-        align-items: center;
-        height: 100%;
-        text-align: center;
-        font-weight: lighter;
-        font-size: 12px;
-
-        @media screen and (max-width: $bp-LG){
-            justify-content: center;
-        }
-    }
+       @media screen and (max-width: $bp-MD){
+           text-align: center;
+       }
+   }
 }

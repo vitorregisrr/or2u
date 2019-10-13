@@ -2,7 +2,11 @@
     'use strict';
 
     $('#nav-toggler').click(function () {
-        $('#main-nav').toggleClass('active');
+        const isExpanded = $(this).attr('aria-expanded') === 'false' ? false : true;
+
+        $('#mobile-nav').toggleClass('active');
+
+        $(this).attr('aria-expanded', !isExpanded);
     });
     
 })();
