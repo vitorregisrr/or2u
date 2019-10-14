@@ -1,0 +1,88 @@
+.aparelho-invisivel {
+    position: relative;
+    padding-top: 80px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #cac4cb;
+
+    .container{
+        max-width: 1400px;
+    }
+
+    &__caption{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 80px;
+        width: 70%;
+        margin-bottom: 120px;
+
+        @media screen and (min-width: 1800px){
+            padding: 0;
+        }
+
+        @media screen and (max-width: $bp-MD){
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            padding: 50px 30px;
+            margin-bottom: 0;
+        }
+    }
+    
+    &__title {
+        padding: 0 20px;
+        text-transform: lowercase;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        font-size: 50px;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 9px rgba(0, 0, 0, 0.082);
+        text-align: left;
+        z-index: 2;
+        
+        @media screen and (max-width: $bp-XL){
+            font-size: 40px;
+        }
+
+        @media screen and (max-width: $bp-MD) {
+            font-size: 39px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 330px) {
+            font-size: 30px;
+        }
+    }
+
+    &__scrolldown {
+        color: #fff;
+        font-size: 32px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__hands {
+        position: absolute;
+        bottom: 0;
+        right: -50px;
+        width: 56%;
+        z-index: 1;
+
+        @media screen and (max-width: $bp-MD) {
+            width: unset;
+            transform: translateX(-50%);
+            right: unset;
+            height: 60%;
+            left: 54%;
+            bottom: 0;
+        }
+
+        @media screen and (max-width: 330px) {
+            height: 60%;
+        }
+    }
+}

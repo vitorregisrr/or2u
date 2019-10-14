@@ -1,0 +1,22 @@
+.banner-3d {
+    &__content {
+        padding: 100px 40px;
+        width: 100%;
+        background-color: #F4F4F4;
+        border-radius: 30px;
+
+        @media screen and (max-width: $bp-LG){
+            padding: 50px;
+            padding-top: 0;
+            text-align: center;
+        }
+    }
+
+    &__img{
+        width: 320px;
+
+        @media screen and (max-width: $bp-LG){
+            width: 250px;
+        }
+    }
+}

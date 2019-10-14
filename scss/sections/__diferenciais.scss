@@ -1,0 +1,72 @@
+.diferenciais {
+
+    .container{
+        @media screen and (min-width: 1400px){
+            max-width: 1300px;
+        }
+    }
+    
+    &__table {
+        width: 100%;
+        color: $color-dark;
+        font-size: 14px;
+
+        &-title {
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        &-check {
+            text-align: center;
+            color: $color-primary;
+        }
+
+        &-label{
+            font-size: 15px;
+        }
+
+        tbody {
+            tr {
+                border: 1px solid #EBEBEB;
+                border-left: none;
+                border-right: none;
+
+                td {
+                    padding: 8px 0;
+                    text-transform: lowercase;
+
+                    &:nth-child(2),
+                    &:nth-child(4) {
+                        background-color: #F8F8F8;
+                    }
+
+                    @media screen and (max-width: $bp-LG) {
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        thead {
+            th {
+                padding: 15px 20px;
+                border-radius: 15px 15px 0 0;
+                max-width: 140px;
+
+                &:nth-child(2),
+                &:nth-child(4) {
+                    background-color: #F8F8F8;
+                }
+
+                @media screen and (max-width: $bp-LG) {
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

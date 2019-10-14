@@ -2,6 +2,7 @@
     position: fixed;
     bottom: 30px;
     right: 50px;
+    z-index: 5;
 
     @media screen and (max-width: $bp-MD){
         display: none;
