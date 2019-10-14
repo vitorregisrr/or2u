@@ -1397,6 +1397,17 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   object-fit: cover;
 }
 
+.fluid-cards__img.fluid {
+  width: 50%;
+}
+
+.fluid-cards__img.fluid img {
+  display: block;
+  margin-left: auto;
+  height: 100%;
+  width: auto;
+}
+
 .fluid-cards__caption {
   display: flex;
   align-content: center;
@@ -1413,7 +1424,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
     order: 1;
     width: 100%;
     height: auto;
-    padding: 50px 30px 100px 30px;
+    padding: 50px 30px 100px;
   }
 }
 
@@ -1436,7 +1447,8 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   height: 100%;
 }
 
-.fluid-cards__caption .inner-title, .fluid-cards__caption .inner-desc {
+.fluid-cards__caption .inner-desc,
+.fluid-cards__caption .inner-title {
   margin-bottom: 19px;
 }
 
