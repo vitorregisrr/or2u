@@ -1,0 +1,53 @@
+.agendamento {
+
+    &__header {
+        background-color: #C2B4BC;
+        height: 310px;
+        margin-bottom: 60px;
+        padding-top: 80px;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        @media screen and (max-width: $bp-LG) {
+            height: 250px;
+            padding-top: 60px;
+            margin-bottom: 30px;
+        }
+
+        .inner-title {
+            text-align: center;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.13);
+        }
+    }
+
+    &__action {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-pink-l;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 110px 0;
+
+        @media screen and (max-width: $bp-LG) {
+            padding: 50px 0;
+        }
+    }
+
+    &__adress {
+        color: $color-dark;
+        text-transform: lowercase;
+        font-weight: bold;
+        max-width: 500px;
+
+        @media screen and (max-width: $bp-LG){
+            font-size: 19px;
+        }
+    }
+}

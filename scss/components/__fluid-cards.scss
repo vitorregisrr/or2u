@@ -10,7 +10,7 @@
     @media screen and (max-width: $bp-LG) {
         flex-direction: column;
         align-items: unset;
-        height: unset;
+        height: auto;
     }
 
     &__img {
@@ -53,13 +53,23 @@
         }
 
         &.fluid {
+            border-radius: 0;
             width: 50%;
+
+            @media screen and (max-width: $bp-LG) {
+                width: 100%;
+            }
 
             img {
                 display: block;
                 margin-left: auto;
                 height: 100%;
                 width: auto;
+                object-fit: contain;
+
+                @media screen and (max-width: $bp-MD){
+                    height: 300px;
+                }
             }
         }
     }

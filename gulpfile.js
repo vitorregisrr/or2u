@@ -154,7 +154,7 @@ gulp.task('copyRecursiveVendorFiles', function () {
 /*Building vendor scripts needed for basic template rendering*/
 gulp.task('buildBaseVendorScripts', function () {
     return gulp
-        .src(['./node_modules/jquery/dist/jquery.min.js', './node_modules/wowjs/dist/wow.min.js', './node_modules/lazyload/lazyload.js', './node_modules/owl.carousel/dist/owl.carousel.min.js', './node_modules/jquery-validation/dist/jquery.validate.js','./node_modules/lightbox2/dist/js/lightbox.min.js', './node_modules/jquery-mask-plugin/dist/jquery.mask.min.js'])
+        .src(['./node_modules/jquery/dist/jquery.min.js', './node_modules/wowjs/dist/wow.min.js', './node_modules/lazyload/lazyload.js', './node_modules/owl.carousel/dist/owl.carousel.min.js', './node_modules/jquery-validation/dist/jquery.validate.js', './node_modules/jquery-mask-plugin/dist/jquery.mask.min.js'])
         .pipe(concat('vendor.bundle.base.js'))
         .pipe(gulp.dest('./vendors/js'));
 });
@@ -162,7 +162,7 @@ gulp.task('buildBaseVendorScripts', function () {
 /*Building vendor styles needed for basic template rendering*/
 gulp.task('buildBaseVendorStyles', function () {
     return gulp
-        .src(['./node_modules/animate.css/animate.min.css', './node_modules/bootstrap/dist/css/bootstrap.grid.min.css', './node_modules/owl.carousel/dist/assets/owl.carousel.min.css', './node_modules/lightbox2/dist/css/lightbox.min.css'])
+        .src(['./node_modules/animate.css/animate.min.css', './node_modules/bootstrap/dist/css/bootstrap.grid.min.css', './node_modules/owl.carousel/dist/assets/owl.carousel.min.css'])
         .pipe(concat('vendor.bundle.base.css'))
         .pipe(gulp.dest('./vendors/css'));
 });
