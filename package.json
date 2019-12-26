@@ -5,7 +5,7 @@
   "main": "index.html",
   "dependencies": {
     "animate.css": "^3.7.0",
-    "bootstrap": "4.1.1",
+    "bootstrap": "4.3.1",
     "daterangepicker": "^3.0.5",
     "del": "2.2.2",
     "gulp-autoprefixer": "^6.1.0",
