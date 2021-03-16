@@ -1,7 +1,7 @@
 # Studio Odontológico OR2U  
 
 
-## [Clique aqui para acessar o site](https://www.or2u.com.br/)
+## [Clique aqui para acessar o site](https://vitorregisrr.github.io/or2u/pages//)
 ## [Clique aqui para acessar a página com o teste (chatbot)](https://www.or2u.com.br/teste)
 
 
